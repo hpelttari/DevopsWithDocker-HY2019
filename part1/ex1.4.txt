@@ -1,0 +1,25 @@
+hannu@hannu-VirtualBox:~$ docker run devopsdockeruh/exec_bash_exercise
+(node:1) ExperimentalWarning: The fs.promises API is experimental
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^CClosing file
+hannu@hannu-VirtualBox:~$ docker ps -a
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+211935cdd2b3        devopsdockeruh/exec_bash_exercise   "node index"             7 minutes ago       Up 5 minutes                                    heuristic_chatelet
+fd29fcb03568        ubuntu:16.04                        "sh -c 'while true; …"   10 minutes ago      Up 10 minutes                                   looper-it
+11b366f0979a        fav_distro:xenial                   "uptime"                 22 minutes ago      Exited (0) 22 minutes ago                       gallant_hypatia
+491564c5edb6        devopsdockeruh/pull_exercise        "node index.js"          27 minutes ago      Exited (0) 26 minutes ago                       zen_lumiere
+hannu@hannu-VirtualBox:~$ docker start  heuristic_chatelet
+heuristic_chatelet
+hannu@hannu-VirtualBox:~$ docker attach --sig-proxy=false  heuristic_chatelet
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^C
+hannu@hannu-VirtualBox:~$ docker exec -it heuristic_chatelet bash
+root@211935cdd2b3:/usr/app# tail -f ./log.txt
+tail: cannot open './log.txt' for reading: No such file or directory
+tail: no files remaining
+root@211935cdd2b3:/usr/app# tail -f ./logs.txt
+Mon, 15 Apr 2019 18:38:09 GMT
+Secret message is:
+"Docker is easy"
