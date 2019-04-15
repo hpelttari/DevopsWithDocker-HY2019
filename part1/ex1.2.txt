@@ -1,0 +1,4 @@
+hannu@hannu-VirtualBox:~/Desktop/dockerhy/DevopsWithDocker-HY2019/part1$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+hannu@hannu-VirtualBox:~/Desktop/dockerhy/DevopsWithDocker-HY2019/part1$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
