@@ -1,0 +1,5 @@
+hannu@hannu-VirtualBox:~/Desktop/dockerhy/DevopsWithDocker-HY2019$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+c3f7a369c2d7        nginx               "nginx -g 'daemon of…"   45 seconds ago      Exited (0) 20 seconds ago                       youthful_blackburn
+7282565c60a5        nginx               "nginx -g 'daemon of…"   50 seconds ago      Exited (0) 9 seconds ago                        gallant_proskuriakova
+f8536efa9f1f        nginx               "nginx -g 'daemon of…"   54 seconds ago      Up 52 seconds               80/tcp              unruffled_greider
