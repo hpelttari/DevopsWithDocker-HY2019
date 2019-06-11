@@ -1,0 +1,7 @@
+docker run -it --name prob5 ubuntu:16.04
+root@b47e8ac531c6:/# apt-get update
+root@b47e8ac531c6:/# apt-get install curl
+root@b47e8ac531c6:/# sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+helsinki.fi
+root@b47e8ac531c6:/# exit
+
