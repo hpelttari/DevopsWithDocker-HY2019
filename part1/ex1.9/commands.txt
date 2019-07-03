@@ -1,0 +1,11 @@
+hannu@hannu-VirtualBox:~/Desktop/dockerhy/DevopsWithDocker-HY2019/part1/ex1.9$ docker run -p 1234:80 devopsdockeruh/ports_exercise
+
+> ports_exercise@1.0.0 start /usr/app
+> node index.js
+
+Listening on port 80, this means inside of the container. Use -p to map the port to a port of your local machine.
+
+
+
+
+After the command and above output I opened google chrome on "localhost:1234" and a page saying "Ports configured correctly!!".
