@@ -1,0 +1,2 @@
+docker build -t e1.10 .
+docker run -d -p 5000:5000 e1.10
